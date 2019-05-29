@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--bottom_nav_color-->
+    <color name="nav_color">#000000</color>
+    <color name="bottom_nav_item_color">#717171</color>
+
+
+    <color name="category_text_color">#cac4c4</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="sign_in_text_color">#dfdada</color>
+    <color name="app_background">#151414</color>
+    <color name="text_color">#717171</color>
+    <color name="text_match_color">#4ACE64</color>
+    <color name="text_color_description">#7c7575</color>
+
+    <color name="border_color">#494848</color>
+
+    //light red
+    <color name="light_red">#F44336</color>
+    <color name="red">#FF0000</color>
+    <color name="button_orange">#fe5824</color>
+    <color name="loginSignup1Background">#f1f5f8</color>
+    <color name="loginSignup1colorAccent">#fe5824</color>
+    <color name="loginSignup2InputBg">#f1f5f8</color>
+
+    <!--dummy-->
+
+    <color name="des_color">#979494</color>
+    <color name="title_color">#cecaca</color>
+    <color name="hr_color">#000</color>
+
+    <!--Search custom color -->
+
+    <color name="edt_search_color">#fcfbfb</color>
+
+
+    <color name="gray_color">#999595</color>
+    <color name="button_bg__color">#717171</color>
+    <color name="up_coming_text_color">#ccbebe</color>
+    <color name="my_list_bf_color">#3A3A3A</color>
+
+
+    <color name="more_text_color">#b3b3b3</color>
+
+
+    <color name="colorWhite">#FFFFFF</color>
+</resources>

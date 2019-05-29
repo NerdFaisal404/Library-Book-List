@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.AddBookFragment">
+
+    <EditText
+        android:id="@+id/input_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:hint="@string/hint_search"
+        android:paddingBottom="20dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/input_search"
+        android:id="@+id/recyclerView_bookList"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

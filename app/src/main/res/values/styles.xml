@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="myCustomMenuTextApearance" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/red</item>
+        <item name="actionMenuTextColor">@color/colorPrimaryDark</item>
+        <item name="android:actionMenuTextColor">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <style name="TextAppearence.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">13sp</item>
+        <item name="colorControlHighlight">@color/white</item>
+
+    </style>
+
+    <style name="TextInputLayoutThem" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorControlNormal">@color/sign_in_text_color</item>
+        <item name="colorControlActivated">@color/app_background</item>
+
+    </style>
+
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">#cac4c4</item>
+    </style>
+
+</resources>
