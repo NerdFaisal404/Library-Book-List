@@ -207,6 +207,7 @@ public class BrowseBookFragment extends Fragment {
                     public void run() {
                         if (!running) {
                             progressdialog.dismiss();
+                            Toast.makeText(getContext(),"BookList Successfully Updated",Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
