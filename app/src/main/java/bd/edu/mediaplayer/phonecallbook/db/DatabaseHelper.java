@@ -76,7 +76,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         // Select All Query
         String selectQuery = "SELECT  * FROM " + BookList.TABLE_NAME + " ORDER BY " +
-                BookList.COLUMN_BOOK_NAME + " DESC";
+                BookList.COLUMN_BOOK_NAME + " DESC"  ;
 
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);

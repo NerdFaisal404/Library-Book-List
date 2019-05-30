@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
 
 import bd.edu.mediaplayer.phonecallbook.R;
 import bd.edu.mediaplayer.phonecallbook.listner.ItemClickListener;
@@ -82,9 +83,13 @@ public class BookListAdapter extends RecyclerView.Adapter<BookListAdapter.MyView
 
                         // name match condition. this might differ depending on your requirement
                         // here we are looking for name or phone number match
-                        if (row.getBookName().toLowerCase().contains(charString.toLowerCase()) || row.getAuthor().contains(charSequence)) {
+
+                        if (Pattern.compile(Pattern.quote(charString), Pattern.CASE_INSENSITIVE).matcher(row.getBookName()).find()) {
                             filteredList.add(row);
                         }
+                       /* if (row.getBookName().contains(charString) || row.getAuthor().contains(charSequence)) {
+                            filteredList.add(row);
+                        }*/
                     }
 
                     filerBookLists = filteredList;
@@ -133,7 +138,7 @@ public class BookListAdapter extends RecyclerView.Adapter<BookListAdapter.MyView
                 case R.id.iv_delete:
                     bookList = (BookList) v.getTag();
 
-                    mItemClickListener.itemClick(v, bookList,this.getPosition());
+                    mItemClickListener.itemClick(v, bookList, this.getPosition());
                     break;
 
                 case R.id.iv_edit:
@@ -155,7 +160,7 @@ public class BookListAdapter extends RecyclerView.Adapter<BookListAdapter.MyView
         notifyItemRangeChanged(position, bookLists.size());
     }
 
-    public void updateAt(int updateIndex,BookList bookList) {
+    public void updateAt(int updateIndex, BookList bookList) {
         bookLists.set(updateIndex, bookList);
         notifyItemChanged(updateIndex);
     }
