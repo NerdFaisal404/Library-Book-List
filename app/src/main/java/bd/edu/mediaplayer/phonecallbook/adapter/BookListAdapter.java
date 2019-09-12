@@ -84,7 +84,8 @@ public class BookListAdapter extends RecyclerView.Adapter<BookListAdapter.MyView
                         // name match condition. this might differ depending on your requirement
                         // here we are looking for name or phone number match
 
-                        if (Pattern.compile(Pattern.quote(charString), Pattern.CASE_INSENSITIVE).matcher(row.getBookName()).find()) {
+                        if (Pattern.compile(Pattern.quote(charString), Pattern.CASE_INSENSITIVE).matcher(row.getBookName()).find()
+                        ||Pattern.compile(Pattern.quote(charString), Pattern.CASE_INSENSITIVE).matcher(row.getAuthor()).find()) {
                             filteredList.add(row);
                         }
                        /* if (row.getBookName().contains(charString) || row.getAuthor().contains(charSequence)) {
